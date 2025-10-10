@@ -18,8 +18,6 @@ case_studies:
   details: false
   title: "Featured Work"
   description: "Case studies from recent work."
-  # Specify the categories you want to show on this page.
-  # These must match the categories in your case study markdown files.
   categories: ["Data", "UX"]
 
 
