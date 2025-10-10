@@ -1,0 +1,71 @@
+{{/* layouts/shortcodes/feature.html */}}
+
+{{ $align := .Get "align" | default "left" }}
+{{ $title := .Get "title" }}
+{{ $image := .Get "image" }}
+{{ $button_label := .Get "button_label" }}
+{{ $button_link := .Get "button_link" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row items-center justify-between">
+      {{ if ne $align "center" }}
+        <div class="mb:md-0 md:col-5 mb-6 {{ if eq $align "right" }} md:order-2 {{ end }}">
+          {{ partial "image" (dict "Src" $image "Alt" $title "DisplayXL" "520x") }}
+        </div>
+        <div class="md:col-7 lg:col-6 {{ if eq $align "right" }} md:order-1 {{ end }}">
+          <h2 class="mb-4">{{ $title | markdownify }}</h2>
+          <div class="mb-8 text-lg content">{{ .Inner | markdownify }}</div>
+          
+          {{/* --- THIS IS THE FIX --- */}}
+          {{ with .Get "bulletpoints" }}
+          <ul class="mb-8">
+            {{ range split . ";" }}
+            <li class="relative mb-4 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              {{ . | markdownify }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+          {{/* --- END OF FIX --- */}}
+
+          {{ if and $button_label $button_link }}
+          <a class="btn btn-primary mt-6" href="{{ $button_link | absURL }}">
+            {{ $button_label }}<i class="fa fa-arrow-right pl-2"></i>
+          </a>
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="col-12 text-center">
+          <div class="mb-6 inline-block">
+            {{ partial "image" (dict "Src" $image "Alt" $title "DisplayXL" "520x") }}
+          </div>
+          <h2 class="mb-4">{{ $title | markdownify }}</h2>
+          <div class="mb-8 text-lg content max-w-[700px] mx-auto">{{ .Inner | markdownify }}</div>
+
+          {{/* --- THIS IS THE FIX --- */}}
+          {{ with .Get "bulletpoints" }}
+          <ul class="mb-8 inline-block text-left">
+            {{ range split . ";" }}
+            <li class="relative mb-4 pl-6">
+              <i class="fa fa-check absolute left-0 top-1.5"></i>
+              {{ . | markdownify }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+          {{/* --- END OF FIX --- */}}
+
+          {{ if and $button_label $button_link }}
+          <div>
+            <a class="btn btn-primary mt-6" href="{{ $button_link | absURL }}">
+              {{ $button_label }}<i class="fa fa-arrow-right pl-2"></i>
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

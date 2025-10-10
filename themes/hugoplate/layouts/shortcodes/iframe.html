@@ -1,0 +1,44 @@
+{{/* layouts/shortcodes/zoom-iframe.html */}}
+
+{{ $src := .Get "src" }}
+{{ $title := .Get "title" | default "Interactive Content" }}
+{{ $native_width := .Get "width" | float }}
+{{ $native_height := .Get "height" | float }}
+{{ $scale := .Get "scale" }} {{/* We get the scale value, but don't set a default */}}
+
+{{ if $scale }}
+  {{/* --- MANUAL SCALE MODE --- */}}
+  {{/* If you provide a scale, it behaves exactly as before */}}
+  {{ $scale_val := $scale | float }}
+  {{ $scaled_width := mul $native_width $scale_val }}
+  {{ $scaled_height := mul $native_height $scale_val }}
+
+  <div class="iframe-container my-6 p-2 bg-light dark:bg-darkmode-light border border-border dark:border-darkmode-border rounded-lg shadow-sm" 
+       style="width: {{ $scaled_width }}px; height: {{ $scaled_height }}px; overflow: hidden;">
+    <iframe
+      src="{{ $src }}"
+      title="{{ $title }}"
+      width="{{ $native_width }}"
+      height="{{ $native_height }}"
+      loading="lazy"
+      style="transform: scale({{ $scale_val }}); transform-origin: top left; border: none;">
+    </iframe>
+  </div>
+
+{{ else }}
+  {{/* --- AUTO SCALE MODE --- */}}
+  {{/* If you DON'T provide a scale, it adds a class and data attributes for our script */}}
+  <div class="zoom-iframe-auto my-6 p-0 bg-light dark:bg-darkmode-light border border-border dark:border-darkmode-border rounded-lg shadow-sm"
+       style="width: {{ $native_width }}px; max-width: 100%; overflow: hidden;"
+       data-native-width="{{ $native_width }}"
+       data-native-height="{{ $native_height }}">
+    <iframe
+      src="{{ $src }}"
+      title="{{ $title }}"
+      width="{{ $native_width }}"
+      height="{{ $native_height }}"
+      loading="lazy"
+      style="transform-origin: top left; border: none;">
+    </iframe>
+  </div>
+{{ end }}

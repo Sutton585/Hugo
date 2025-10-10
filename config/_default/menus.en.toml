@@ -1,0 +1,63 @@
+	############# English navigation ##############
+
+# main menu
+# [[main]]
+# name = "Technical Ops"
+# url = "/techops"
+# weight = 3
+
+[[main]]
+name = "Upstate UX"
+url = "/ux"
+weight = 1
+
+# [[main]]
+# name = "Buisness Systems"
+# url = "/bizsystems"
+# weight = 2
+
+# [[main]]
+# weight = 4
+# name = "Pages"
+
+# [[main]]
+# parent = "Pages"
+# name = "Blog"
+# url = "/blog"
+
+# [[main]]
+# parent = "Pages"
+# name = "Elements"
+# url = "/elements"
+
+# [[main]]
+# parent = "Pages"
+# name = "Contact"
+# url = "/contact"
+
+# [[main]]
+# parent = "Pages"
+# name = "Categories"
+# url = "/categories"
+
+# [[main]]
+# parent = "Pages"
+# name = "About"
+# url = "/about"
+
+
+# footer menu
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 1
+
+# [[footer]]
+# name = "Elements"
+# url = "/elements"
+# weight = 2
+
+# [[footer]]
+# name = "Privacy Policy"
+# url = "/privacy-policy"
+# weight = 3

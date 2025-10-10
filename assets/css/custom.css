@@ -1,0 +1,16 @@
+/* Add your own custom styles here */
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-compact .gallery-item {
+  /* This overrides the theme's hardcoded height */
+  height: auto !important;
+}
+
+.gallery-compact .gallery-item img {
+  /* This forces the images to be small */
+  max-height: 120px;
+  width: auto;
+  margin: auto;
+}

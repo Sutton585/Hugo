@@ -1,0 +1,28 @@
+{{/* layouts/partials/case-studies.html */}}
+{{ $data := . }}
+{{ $details:= .Params.details }}
+
+<section id="work" class="section pt-0">
+  <div class="container">
+    {{/* This part now correctly receives the title from _index.md */}}
+    {{ if $data.details }}
+      <div class="row">
+        <div class="mx-auto mb-12 text-center md:col-10 lg:col-8">
+          <h2 class="mb-4">{{ $data.title | markdownify }}</h2>
+          <p>{{ $data.description | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+
+    {{/* This filters pages using the declared categories */}}
+    {{ $filteredPages := where site.RegularPages "Params.categories" "intersect" $data.categories }}
+
+    <div class="row">
+      {{ range $filteredPages }}
+        <div class="mb-8 md:col-6">
+          {{ partial "components/case-study-card" . }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
