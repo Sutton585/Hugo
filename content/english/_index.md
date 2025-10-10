@@ -33,7 +33,7 @@ features:
     button:
       enable: true
       label: "Take Action Now"
-      link: "UX"
+      link: "ux"
 
   - title: "Business slows without you?"
     image: "/images/service-2.png"
