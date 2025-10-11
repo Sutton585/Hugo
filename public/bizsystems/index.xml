@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Business Systems on David Sutton</title>
-    <link>/bizsystems/</link>
+    <link>//localhost:62503/bizsystems/</link>
     <description>Recent content in Business Systems on David Sutton</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/bizsystems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:62503/bizsystems/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

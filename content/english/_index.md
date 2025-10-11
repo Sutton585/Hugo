@@ -15,11 +15,10 @@ banner:
 # Case Studies
 case_studies:
   enable: false
-  details: false
+  details: true
   title: "Featured Work"
   description: "Case studies from recent work."
   categories: ["Data", "UX"]
-
 
 # Features
 features:

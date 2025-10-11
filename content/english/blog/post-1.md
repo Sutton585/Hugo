@@ -1,5 +1,5 @@
 ---
-title: "WAE: User-Centered Design and Scalable Collaboration"
+title: "WAE: Scaling Product/Design Ops"
 meta_title: "test"
 description: "Scaling product design processes while delivering measurable user satisfaction improvements."
 date: 2022-04-04T05:00:00Z

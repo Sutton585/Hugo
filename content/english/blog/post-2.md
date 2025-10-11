@@ -24,9 +24,12 @@ I was brought into Xerox's Experience Design Group to lead the UX/UI design for 
 
 It became immediately clear, that this vision was limited by a broken internal system: a waterfall development process crippled by slow validation cycles, massive rework costs, and an increasingly strained relationship between our US-based stakeholders and offshore developers. To deliver an innovative product, I had to address the underlying dysfunction in the process. I developed, advocated for, and implemented a more modern DesignOps framework that solved these underlying business and delivery challenges. This new system cleared the path to not only launch the product but to establish it as an industry benchmark for usability, winning multiple awards and proving that a great process is what creates a great product.
 
----
-
-{{< video src="images/case-studies/xrxUX.mp4" width="100%" height="auto" autoplay="true" loop="true" muted="true" controls="false" class="rounded-lg" >}}
+{{< gallery dir="images/case-studies/xerox/1"
+    width="400"
+    height="400"
+    command="Fit"
+    class=""
+    zoomable="true" >}}
 
 ---
 
@@ -42,9 +45,12 @@ However, the existing operational reality made this impossible. The vision was b
 
 To achieve our product vision, we had to first tear down the broken legacy system that was holding it hostage.
 
----
-
-{{< video src="images/case-studies/xrx1.mp4" width="100%" height="auto" autoplay="true" loop="true" muted="true" controls="false" class="rounded-lg" >}}
+{{< gallery dir="images/case-studies/xerox/2"
+    width="400"
+    height="400"
+    command="Fit"
+    class=""
+    zoomable="true" >}}
 
 ---
 
@@ -68,37 +74,19 @@ My new process used modern prototyping tools to isolate and test specific, high-
 - **Function:** This provided a constant stream of actionable user feedback, allowing us to validate or kill ideas before writing a single line of production code.
 - **Result:** It systematically de-risked the project and, by demonstrating quick, tangible progress, converted skeptical stakeholders into advocates for the new process.
 
----
-
-{{< video src="images/case-studies/xrxnfc.mp4" width="100%" height="auto" autoplay="true" loop="true" muted="true" controls="false" class="rounded-lg" >}}
+{{< image src="images/case-studies/xerox/xrxEmail.gif" caption="" alt="alter-text" height="" width="100%" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 ---
 
 ## The Impact
 
-The new system was transformative. It removed the operational friction and unleashed the design team's ability to execute on the original vision.
-
-## Industry Recognition and Best-in-Class Usability
-
-We successfully delivered the intuitive, tablet-like experience we set out to build. The redesigned ConnectKey UI was a massive commercial and critical success, receiving widespread acclaim and multiple industry awards for its usability and innovative design.
-
-Awards from Buyer's Lab, McAffee, iF Design, CRN, and others:
-
-- **BLI 2018 Monochrome Printer & MFP Line of the Year Award**
-- **2020 Buyers Lab Pick Award** for the innovative App Gallery ecosystem
-- **2021-2022 PaceSetter Award** for leadership in hybrid workplace solutions
-
-### The Business Results That Made It Possible
-
-This award-winning product was the direct result of the new operational efficiency we created:
+We successfully delivered the intuitive, tablet-like experience we set out to build. The redesigned ConnectKey UI was a massive commercial and critical success, receiving widespread acclaim and multiple industry awards for its usability and innovative design. It removed the operational friction and unleashed the design team's ability to execute on the original vision. The award-winning end result  was the direct result of the new operational efficiency we created:
 
 - **Reduced Rework by at least 25%:** The documentation system saved thousands of developer hours and dramatically accelerated the timeline.
 - **Cut Testing Cycles from Months to Weeks:** Rapid prototyping allowed for more iteration, leading to a higher-quality product shipped faster.
 - **Improved Developer Velocity:** The clear, systematic approach gave the offshore team the predictability they needed to perform at their best.
 
----
-
-{{< video src="images/case-studies/xrxCopy.mp4" width="100%" height="auto" autoplay="true" loop="true" muted="true" controls="false" class="rounded-lg" >}}
+{{< image src="images/case-studies/xerox/xrxCopy.gif" caption="" alt="alter-text" height="" width="100%" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 ---
 
@@ -108,6 +96,18 @@ This award-winning product was the direct result of the new operational efficien
 This experience at Xerox helped clarify my philosophy: exceptional outcomes come from intentional systems. It was an early inflection point in my career where I realized my background as a developer in high-velocity projects gave me an advantage when it came to getting results in challenging environments.
 
 This project also helped me refine my approach and deepen my toolkit. I was able to use rapid prototyping as a gas pedal to accelerate the development process, expedite informed stakeholder alignment and focus our direction. My ability to quickly build and drive communication and collaboration provided clarity and focus for developers, targetted high-velocity testing cycles, and collaborative stakeholders armed with with tangible proof of progress and user-acceptance. Turning my technical expertise to strategic problems helped me develop the playbook I still use to drive results in challenging turnaround scenarios.
+
+{{< image src="images/case-studies/xerox/xrxCustom.gif" caption="" alt="alter-text" height="" width="100%" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+
+---
+
+## Industry Recognition and Awards
+
+Awards from Buyer's Lab, McAffee, iF Design, CRN, and others:
+
+- **BLI 2018 Monochrome Printer & MFP Line of the Year Award**
+- **2020 Buyers Lab Pick Award** for the innovative App Gallery ecosystem
+- **2021-2022 PaceSetter Award** for leadership in hybrid workplace solutions
 
 
 {{< gallery dir="images/case-studies/xerox/awards/BLI"

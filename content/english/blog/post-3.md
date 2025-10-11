@@ -9,14 +9,18 @@ author: "John Doe"
 tags: ["UX", "DesignOps"]
 draft: false
 ---
-
 ## Overview
 
-For the PepsiCo Partners trade show, my objective was to create an interactive multi-device touchscreen experience that would captivate attendees, showcase their new recurring order capabilities, and drive lead generation. I led the development of all digital and software aspects of the project, managing a cross-functional team of developers and designers to deliver a high-impact experience under a tight timeline. My role was to translate complex stakeholder requirements into an intuitive, engaging user journey, using rapid prototyping and iterative testing to ensure we met both business goals and user needs.
+For the PepsiCo Partners trade show, my objective was to create an interactive multi-device touchscreen experience that would captivate attendees and drive lead generation. I led the development of all digital and software aspects, managing a cross-functional team of designers and developers on an aggressive schedule. My role spanned the entire project lifecycle, from facilitating initial ideation and strategy sessions to presenting prototypes to stakeholders and guiding the project through multiple rounds of iterative testing based on user feedback.
 
 
-## The Challenge & Goals
+<div class="flex flex-col md:flex-row gap-6 items-center my-8">
+  <div class="w-full md:w-1/3 md:order-2">
+    {{< image src="images/case-studies/pepsico/3.png" alt="alter-text" zoomable="true">}}
+  </div>
+  <div class="w-full md:w-2/3 md:order-1">
 
+## The Challenge
 The core challenge was to cut through the chaos of a crowded trade show floor. We had to achieve several key business goals:
 
 - Announce and clearly demonstrate PepsiCo’s new recurring order capabilities.
@@ -25,31 +29,21 @@ The core challenge was to cut through the chaos of a crowded trade show floor. W
 
 Accomplishing this meant simplifying complex product value propositions into digestible, intuitive interactions, all while navigating the significant constraints of a tight timeline and limited resources.
 
-## My Role
+  </div>
+</div>
 
-I led the development of all digital and software-based aspects of this project, balancing a tight timeline with complex stakeholder requirements. My responsibilities spanned serval areas:
+<div class="flex flex-col md:flex-row gap-6 items-center my-8">
+  <div class="w-full md:w-1/2 md:order-1">
+    {{< image src="images/case-studies/pepsico/1/1.png" alt="alter-text" zoomable="true">}}
+  </div>
+  <div class="w-full md:w-1/2 md:order-2">
 
-- **Ideation and Strategy**
-Facilitated brainstorming and storyboarding sessions to define the user journey and experience.
-- **Team Leadership**
-Managed cross-functional teams of developers and designers, ensuring seamless communication and delivery on an aggressive schedule.
-- **Stakeholder Engagement**
-Presented prototypes, articulated design decisions, and maintained transparency with clients and internal teams.
-- **Iterative Testing**
-Guided the project through multiple design iterations based on user feedback, ensuring alignment with client goals and user needs.
+{{< image src="images/case-studies/pepsico/1/2.png" alt="alter-text" zoomable="true">}}
 
-{{< image src="images/case-studies/pepsico/3.png" alt="alter-text" zoomable="true">}}
+  </div>
+</div>
 
-{{< gallery dir="images/case-studies/pepsico/1"
-    width="400"
-    height="400"
-    command="Fit"
-    class=""
-    zoomable="true" >}}
-
-
-
-
+---
 
 ### Iterative Design and Refinement
 
@@ -61,6 +55,8 @@ The entire experience was built on a foundation of rapid iteration and refinemen
     command="Fit"
     class=""
     zoomable="true" >}}
+
+---
 
 <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-2">
@@ -74,6 +70,8 @@ The project began by creating low-fidelity wireframes and storyboards that serve
   </div>
 </div>
 
+---
+
 <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-1">
     {{< image src="images/case-studies/pepsico/walkthrough.gif" alt="alter-text" zoomable="true">}}
@@ -86,6 +84,8 @@ With our strategy mapped, we transformed the standard ordering process into a gu
 
   </div>
 </div>
+
+---
 
 <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-2">

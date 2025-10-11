@@ -17,6 +17,7 @@ banner:
 case_studies:
   enable: true
   details: false
+  view: "default"
   title: "Featured Work"
   description: "Recent impact: Smooth ops, intuitive products, measurable results. "
   categories: ["UX", "DesignOps"]
