@@ -7,7 +7,7 @@ banner:
   enable: true
   title: "Your business runs on your grit. What happens when you step away?"
   content: "When everything goes through you, your hours are the bottleneck for business growth, and time off is impossible. I create quiet, low-maintenance systems that free you up."
-  image: "/images/face-logo.png"
+  image: "#"
   button:
     enable: true
     label: "Start Your Free Audit"

@@ -7,12 +7,12 @@
 # weight = 3
 
 [[main]]
-name = "Upstate UX"
+name = "User Experience"
 url = "/ux"
 weight = 1
 
 # [[main]]
-# name = "Buisness Systems"
+# name = "Business Ops"
 # url = "/bizsystems"
 # weight = 2
 
