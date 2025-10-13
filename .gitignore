@@ -1,0 +1,8 @@
+# .gitignore
+
+# Hugo build output
+/public/
+
+# Other generated files
+/resources/
+hugo_stats.json
