@@ -1,0 +1,4 @@
+/test-redirect / 302
+https://upstateux.com/ /ux/ 301
+https://upstateux.com/* /ux/:splat 200
+/* /en/404.html    404
