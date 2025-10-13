@@ -1,3 +1,4 @@
 
-https://upstateux.com/* /ux/:splat    301
+https://upstateux.com/ux/* https://upstateux.com/:splat 301
+https://upstateux.com/* /ux/:splat    200
 /* /en/404.html    404
