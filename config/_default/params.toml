@@ -1,6 +1,6 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/favicon.png"
+favicon = "images/face-logo.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 # logo = "images/logo.png"
 # logo_darkmode = "images/logo-darkmode.png"
@@ -18,7 +18,7 @@ navbar_fixed = true
 theme_switcher = true
 theme_default = "system" # available options [light/dark/system]
 # Main Sections
-mainSections = ["blog"]
+mainSections = ["ux"]
 # contact form action
 contact_form_action = "https://formspree.io/f/xblzzgka" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
@@ -46,11 +46,11 @@ link = "contact"
 [search]
 enable = false
 primary_color = "#121212"
-include_sections = ["blog"]
+include_sections = ["ux"]
 show_image = true
 show_description = true
-show_tags = true
-show_categories = true
+show_tags = false
+show_categories = false
 
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
@@ -62,11 +62,11 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
-twitter = "zeon_studio"
-image = "images/og-image.png"
+keywords = ["UX", "Rochester"]
+description = "David Sutton, User Experience Expert"
+author = "David Sutton"
+twitter = "#"
+image = "images/face-logo.png"
 
 
 # site verifications
@@ -98,15 +98,15 @@ sidebar = ["categories", "tags"]
 # google map
 [google_map]
 enable = false
-map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
+# map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+# map_latitude = "51.5223477"
+# map_longitude = "-0.1622023"
+# map_marker = "images/marker.png"
 
 
 # Subscription
 [subscription]
 enable = false
 # mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+mailchimp_form_action = "#" # replace this url with yours
+mailchimp_form_name = "#"
