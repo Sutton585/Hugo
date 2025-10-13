@@ -6,10 +6,10 @@
 # url = "/techops"
 # weight = 3
 
-[[main]]
-name = "User Experience"
-url = "/ux"
-weight = 1
+# [[main]]
+# name = "User Experience"
+# url = "/ux"
+# weight = 1
 
 # [[main]]
 # name = "Business Ops"
@@ -18,22 +18,22 @@ weight = 1
 
 # [[main]]
 # weight = 4
-# name = "Pages"
+# name = "Services"
 
 # [[main]]
-# parent = "Pages"
-# name = "Blog"
-# url = "/blog"
+# parent = "Services"
+# name = "UX/Product Teams"
+# url = "/UX"
 
 # [[main]]
-# parent = "Pages"
-# name = "Elements"
-# url = "/elements"
+# parent = "Services"
+# name = "Business Systems"
+# url = "/bizSystems"
 
 # [[main]]
-# parent = "Pages"
-# name = "Contact"
-# url = "/contact"
+# parent = "Services"
+# name = "Tech Operatiosn"
+# url = "/techOps"
 
 # [[main]]
 # parent = "Pages"
