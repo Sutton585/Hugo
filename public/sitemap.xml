@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:63180/</loc>
+    <loc>/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/categories/designops/</loc>
+    <loc>/categories/designops/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/tags/designops/</loc>
+    <loc>/tags/designops/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/blog/post-4/</loc>
+    <loc>/blog/post-4/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/blog/post-3/</loc>
+    <loc>/blog/post-3/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/categories/ux/</loc>
+    <loc>/categories/ux/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/tags/ux/</loc>
+    <loc>/tags/ux/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/blog/post-1/</loc>
+    <loc>/blog/post-1/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/blog/post-2/</loc>
+    <loc>/blog/post-2/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:63180/authors/</loc>
+    <loc>/authors/</loc>
   </url><url>
-    <loc>//localhost:63180/bizsystems/</loc>
+    <loc>/bizsystems/</loc>
   </url><url>
-    <loc>//localhost:63180/contact/</loc>
+    <loc>/contact/</loc>
   </url><url>
-    <loc>//localhost:63180/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>//localhost:63180/elements/</loc>
+    <loc>/elements/</loc>
   </url><url>
-    <loc>//localhost:63180/authors/john-doe/</loc>
+    <loc>/authors/john-doe/</loc>
   </url><url>
-    <loc>//localhost:63180/pages/</loc>
+    <loc>/pages/</loc>
   </url><url>
-    <loc>//localhost:63180/privacy-policy/</loc>
+    <loc>/privacy-policy/</loc>
   </url><url>
-    <loc>//localhost:63180/authors/sam-wilson/</loc>
+    <loc>/authors/sam-wilson/</loc>
   </url><url>
-    <loc>//localhost:63180/sections/</loc>
+    <loc>/sections/</loc>
   </url><url>
-    <loc>//localhost:63180/techops/</loc>
+    <loc>/techops/</loc>
   </url><url>
-    <loc>//localhost:63180/ux/</loc>
+    <loc>/ux/</loc>
   </url><url>
-    <loc>//localhost:63180/authors/william-jacob/</loc>
+    <loc>/authors/william-jacob/</loc>
   </url>
 </urlset>

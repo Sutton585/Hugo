@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on David Sutton</title>
-    <link>//localhost:63180/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on David Sutton</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:63180/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DesignOps</title>
-      <link>//localhost:63180/categories/designops/</link>
+      <link>/categories/designops/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:63180/categories/designops/</guid>
+      <guid>/categories/designops/</guid>
       <description></description>
     </item>
     <item>
       <title>UX</title>
-      <link>//localhost:63180/categories/ux/</link>
+      <link>/categories/ux/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>//localhost:63180/categories/ux/</guid>
+      <guid>/categories/ux/</guid>
       <description></description>
     </item>
   </channel>
