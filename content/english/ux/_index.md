@@ -6,7 +6,7 @@ title: "UX Services"
 banner:
   enable: true
   title: "David Sutton"
-  content: "From startups to enterprise (Apple, Verizon, Xerox) I create intuitive products and scalable systems to eliminate friction between product and engineering. I'll lead, fill gaps, or coach you to the next level."
+  content: "From startups to enterprise (Apple, Verizon, Xerox) I create intuitive products and scalable systems to eliminate friction between product and engineering. I'll lead, fill gaps, or audit and coach you to the next level."
   image: "/images/face-logo.png"
   button:
     enable: true
@@ -27,11 +27,11 @@ case_studies:
 features:
   - title: "Experience Design That Delivers"
     image: "/images/service-1.png"
-    content: "Hiring UX shouldn't feel like bluffing through a foreign language. Hit the ground running with a purpose-built experience design practice with a service mindset and rapid feedback loops."
+    content: "Hiring UX shouldn't feel like bluffing through a foreign language. Hit the ground running with a purpose-built experience design practice with a service mindset and actionable feedback loops."
     bulletpoints:
       - "Scalable balance across discovery, research and active development."
-      - "Process playbooks, governance models, docs and rituals to shape team culture from day one."
-      - "Staffing support and recruiter resources without dense jargon and buzzwords."
+      - "Process playbooks, governance models, docs and agile rituals to shape team culture from day one."
+      - "UX-first staffing support and recruiter resources without the jargon and buzzwords."
     button:
       enable: false
       label: "Take Action Now"
@@ -42,7 +42,7 @@ features:
     content: "Investing in the UX of systems/ops helps me build the trust and tooling to turn a source of friction into your team's secret weapon."
     bulletpoints:
       - "Maintain clarity and alignment across research, design, and dev."
-      - "Scalable agile workflows, design systems, automated tooling and internal resources."
+      - "Scalable delivery workflows, Figma design systems, automated tooling and AI-enhancement."
       - "Docs that stay useful and organized. No more Slack archaeology."
     button:
       enable: false
@@ -53,7 +53,7 @@ features:
     image: "/images/service-3.png"
     content: "Uncover and exploit the hidden leverage points that unlock a more resilient and collaborative human-centered culture."
     bulletpoints:
-      - "HCD Capacity Audits pinpoint strategic opportunities for leveling up your cross-functional user-centered collaboration."
+      - "HCD Integration Audits pinpoint opportunities for leveling up your orginization's user-centered culture."
       - "Hands-on coaching, custom playbooks, and automated solutions ensure to achieve that potential."
       - "Maintain trajectory with flexible arrangements including fractional consulting, advisory retainers, and embedded SMB support."
     button:
