@@ -7,7 +7,7 @@
         <div class="row justify-center">
           <!-- beginning of top image -->
           <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto mb-6" "Size" "200x200" ) }}
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto mb-6" "Size" "150x150" ) }}
           </div>
           <!-- end  of top image -->
           <div class="lg:col-7 md:col-9 mb-8 text-center">
@@ -21,6 +21,19 @@
               {{ if .enable }}
                 <a
                   class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }} 
+            {{ end }}
+            {{ with .button2 }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-transparent"
                   href="{{ .link | absURL }}"
                   {{ if strings.HasPrefix .link `http` }}
                     target="_blank" rel="noopener"
@@ -51,44 +64,8 @@
   <!-- /Case Studies -->
 
   <!-- Clients --> 
-  {{ with .Params.clients }}
-    {{/* Only render this section if "enable: true" is set */}}
-    {{ if .enable }}
-
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            {{/* --- 1. Title and Content --- */}}
-            <div class="mx-auto mb-12 text-center lg:col-8">
-              <h2 class="mb-4">{{ .title | markdownify }}</h2>
-              <p>{{ .content | markdownify }}</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              
-              {{/* --- 2. Small Viewport Display Area --- */}}
-              {{/* This div is visible ONLY on small screens (mobile) */}}
-              <div class="md:hidden">
-                <p class="text-center font-bold text-red-500">[Mobile Logo Display Area]</p>
-                {{/* The code to display your mobile logo grid will go here. */}}
-              </div>
-
-              {{/* --- 3. Large Viewport Display Area --- */}}
-              {{/* This div is hidden on small screens and visible ONLY on medium and larger screens (desktop) */}}
-              <div class="hidden md:block">
-                <p class="text-center font-bold text-blue-500">[Desktop Logo Display Area]</p>
-                {{/* The code to display your desktop logo grid or animation will go here. */}}
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-
-    {{ end }}
-  {{ end }}
-  <!-- /Triage -->
+  {{ partial "clients.html" .Params.clients }}
+  <!-- /Clients -->
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}

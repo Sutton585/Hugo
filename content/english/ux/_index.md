@@ -6,7 +6,7 @@ title: "UX Services"
 banner:
   enable: true
   title: "Experience. Design. Systems."
-  content: "From startups to enterprise (Apple, Verizon, Xerox) I create intuitive products and scalable systems to eliminate friction between product and engineering. I'll lead, fill gaps, or audit and coach you to the next level."
+  content: "From startups to enterprise, I create intuitive UX and scalable systems to eliminate friction between product and engineering. I'll lead, fill gaps, or audit and coach you to the next level."
   image: "#"
   button:
     enable: true

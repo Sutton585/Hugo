@@ -5,12 +5,17 @@ layout: landing-page
 banner:
   enable: true
   title: "David Sutton"
-  content: "From SMBs and startups to Fortune 500, I've spent over a decade improving operations so you can focus on what you do best. Tired of putting out fires? Let’s write your next chapter together."
+  content: "I've spent over a decade improving operations so you can focus on what you do best. Tired of putting out fires? Let’s write your next chapter together."
   image: "/images/face-logo.png"
   button:
     enable: true
     label: "Get Started"
     link: "#features"
+  button2:
+    enable: false
+    label: "Get Started"
+    link: "#features"
+
 
 # Case Studies
 case_studies:
@@ -19,6 +24,13 @@ case_studies:
   title: "Featured Work"
   description: "Case studies from recent work."
   categories: ["Data", "UX"]
+
+# Clients
+clients:
+  enable: false
+  title: "Powering the world’s best product teams."
+  content: "From innovative startups to established enterprises."
+  gallery: "/images/client-logos"
 
 # Features
 features:
