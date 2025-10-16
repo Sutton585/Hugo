@@ -8,6 +8,7 @@ categories: ["UX", "DesignOps"]
 author: ""
 tags: ["UX", "DesignOps"]
 draft: false
+noindex: true
 toc: false
 
 ---

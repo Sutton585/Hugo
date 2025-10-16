@@ -28,8 +28,8 @@ case_studies:
 # Clients
 clients:
   enable: false
-  title: "Powering the world’s best product teams."
-  content: "From innovative startups to established enterprises."
+  # title: "Powering the world’s best product teams."
+  # content: "From innovative startups to established enterprises."
   gallery: "/images/client-logos"
 
 # Features

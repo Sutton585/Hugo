@@ -8,6 +8,7 @@ categories: ["UX", "DesignOps"]
 author: "John Doe"
 tags: ["UX", "DesignOps"]
 draft: false
+noindex: true
 ---
 ## Overview
 

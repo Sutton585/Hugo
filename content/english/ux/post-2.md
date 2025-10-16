@@ -8,6 +8,7 @@ categories: ["UX", "DesignOps"]
 author: "Sam Wilson"
 tags: ["UX", "DesignOps"]
 draft: false
+noindex: true
 ---
 {{< accordion "Interactive UI Demo" >}}
 

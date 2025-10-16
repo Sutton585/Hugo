@@ -61,5 +61,7 @@
 {{ partial "mermaid/assets/js" . }}
 
 
-<!-- adobe font -->
-<link rel="stylesheet" href="https://use.typekit.net/srp4srd.css">
+<!-- no index -->
+{{ if .Params.noindex }}
+  <meta name="robots" content="noindex, nofollow">
+{{ end }}

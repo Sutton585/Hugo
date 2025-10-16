@@ -10,6 +10,7 @@ tags: ["UX", "DesignOps"]
 toc: false
 details: false
 draft: false
+noindex: true
 ---
 
 An agency's vision to solve post-COVID healthcare staffing chaos died on arrival when their expensive, externally-built MVP was delivered non-functional. I was brought in as the product design leader to rescue the project from the ground up. With no product leadership, significant technical debt, and a bloated, rapidly-scaling engineering team, I executed a two-front strategy: first, I ran an iterative research and design process to find the core user need and validate a new product direction. Second, I built a scalable DesignOps system to ensure we could execute on that vision with speed and consistency. This work became the cornerstone of WAE, the new startup that went on to provide countless employment opportunities to underserved communities.
