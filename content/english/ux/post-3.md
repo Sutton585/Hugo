@@ -3,7 +3,7 @@ title: "PepsiCo: Engaging Interactive Experiences"
 meta_title: ""
 description: "Creating an interactive touchscreen experience to captivate users and strengthen sales funnels."
 date: 2022-04-04T05:00:00Z
-image: "/images/case-studies/pepsico/covert.png"
+image: "/images/case-studies/pepsico/pepsiCo-cover.png"
 categories: ["UX", "DesignOps"]
 author: "John Doe"
 tags: ["UX", "DesignOps"]
@@ -87,25 +87,24 @@ With our strategy mapped, we transformed the standard ordering process into a gu
 
 ---
 
-<div class="flex flex-col md:flex-row gap-6 items-center my-8">
-  <div class="w-full md:w-1/2 md:order-2">
-    {{< image src="images/case-studies/pepsico/final.gif" alt="alter-text" zoomable="true">}}
-  </div>
-  <div class="w-full md:w-1/2 md:order-1">
-
 ### Tactile Interactivity
 
 Finally, to make the experience memorable, we layered in polished, custom animations controlled by touch. A standout feature allowed users to swipe to transition from day to night, providing a moment of tactile delight that showcased the platform's responsive and engaging nature.
+<div class="flex flex-col md:flex-row gap-6 items-center my-8">
+  <div class="w-full md:w-1/2 md:order-2">
+    {{< image src="images/case-studies/pepsico/final.gif" alt="alter-text" caption="Example of final interactions." zoomable="true">}}
+  </div>
+  <div class="w-full md:w-1/2 md:order-1">
 
+{{< image src="images/case-studies/pepsico/animation-wireframes.gif" alt="alter-text" zoomable="true" caption="Early wireframes/storyboards of our interactive experience.">}}
   </div>
 </div>
 
-{{< gallery dir="images/case-studies/pepsico/3"
-    width="400"
-    height="400"
-    command="Fit"
-    class=""
-    zoomable="true" >}}
+<div class="flex flex-col md:flex-row gap-6 items-center my-8">
+  <div class="w-full md:w-1/3 md:order-2">
+    {{< image src="images/case-studies/pepsico/3.png" alt="alter-text" zoomable="true">}}
+  </div>
+  <div class="w-full md:w-2/3 md:order-1">
 
 ---
 
@@ -114,3 +113,6 @@ Finally, to make the experience memorable, we layered in polished, custom animat
 The exhibit was a definitive success, cutting through the trade show noise to attract high foot traffic. Visitors praised the intuitive, tactile design, and this high level of engagement directly translated into more meaningful conversations with sales reps, strengthening the overall sales funnel.
 
 This project is a clear example of how a focused, user-centered design process can deliver an impactful experience, even under the pressure of a tight timeline. By grounding our creative animations and interactive workflows in rapid prototyping and iterative testing, we ensured every element served the core business goals. The key takeaway for me was clear: in a fast-paced environment, an agile and collaborative process is the foundation for creating engaging experiences that deliver measurable results
+
+  </div>
+</div>

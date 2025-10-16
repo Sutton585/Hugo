@@ -3,7 +3,7 @@ title: "Interactive Gaming Experience Design"
 meta_title: ""
 description: "Designing and leading a multimedia gaming experience that captured leads and engaged trade show attendees."
 date: 2022-04-04T05:00:00Z
-image: "images/case-studies/msm/max1.png"
+image: "images/case-studies/msm/maximp-cover.png"
 categories: ["UX", "DesignOps"]
 author: ""
 tags: ["UX", "DesignOps"]

@@ -3,7 +3,7 @@ title: "Xerox: Multi-interface UX"
 meta_title: ""
 description: "How I introduced rapid prototyping and user-driven innovation at a legacy company, resulting in award-winning products."
 date: 2022-04-04T05:00:00Z
-image: "/images/case-studies/xerox/xrx-hero.png"
+image: "/images/case-studies/xerox/xrx-cover.png"
 categories: ["UX", "DesignOps"]
 author: "Sam Wilson"
 tags: ["UX", "DesignOps"]
