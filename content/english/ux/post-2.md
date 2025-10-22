@@ -10,14 +10,8 @@ tags: ["UX", "DesignOps"]
 draft: false
 noindex: true
 ---
-{{< accordion "Interactive UI Demo" >}}
 
-{{% iframe 
-    src="https://www.xerox.com/vids/UniversalSIM6/1Home/Home.html" 
-    width="1024" 
-    height="700" 
-    title="Xerox Demo" %}}
-{{< /accordion >}}
+
 
 ## Overview
 
@@ -32,6 +26,15 @@ It became immediately clear, that this vision was limited by a broken internal s
     class=""
     zoomable="true" >}}
 
+{{< accordion "Interactive UI Demo" >}}
+
+{{% iframe 
+    src="https://www.xerox.com/vids/UniversalSIM6/1Home/Home.html" 
+    width="1024" 
+    height="700" 
+    title="Xerox Demo" %}}
+
+{{< /accordion >}}
 ---
 
 ## Vision Versus Reality
