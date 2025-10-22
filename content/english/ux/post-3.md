@@ -1,7 +1,7 @@
 ---
-title: "PepsiCo: Engaging Interactive Experiences"
+title: "Interactive Engagement Experiences"
 meta_title: ""
-description: "Creating an interactive touchscreen experience to captivate users and strengthen sales funnels."
+description: "PepsiCo: Interactive mutli-device experiences strengthening sales funnels."
 date: 2022-04-04T05:00:00Z
 image: "/images/case-studies/pepsico/pepsiCo-cover.png"
 categories: ["UX", "DesignOps"]

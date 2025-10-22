@@ -1,57 +1,17 @@
 {{ define "main" }}
   
-  <!-- Banner -->
+  <!-- Banner --> 
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
-        <div class="row justify-center">
-          <!-- beginning of top image -->
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto mb-6" "Size" "150x150" ) }}
-          </div>
-          <!-- end  of top image -->
-          <div class="lg:col-8 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
-              {{ .title | markdownify }}
-            </h1> 
-            <p class="mb-8">
-              {{ .content | markdownify }}
-            </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }} 
-            {{ end }}
-            {{ with .button2 }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-transparent"
-                  href="{{ .link | absURL }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
-              {{ end }} 
-            {{ end }}
-          </div>
-          <!-- <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
-          </div> -->
-        </div>
-      </div>
-    </section>
+  {{ if .enable }}
+    {{ partial "banner.html" . }}
   {{ end }}
-  <!-- /Banner -->
+  {{ end }}
+  <!-- Banner --> 
+
+  <!-- Clients --> 
+  {{ partial "clients.html" .Params.clients }}
+  <!-- /Clients -->
+  
 
   <!-- Case Studies -->
 
@@ -63,9 +23,6 @@
 
   <!-- /Case Studies -->
 
-  <!-- Clients --> 
-  {{ partial "clients.html" .Params.clients }}
-  <!-- /Clients -->
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
@@ -174,4 +131,5 @@
     {{ end }}
   {{ end }}
   <!-- /Testimonials -->
+
 {{ end }}

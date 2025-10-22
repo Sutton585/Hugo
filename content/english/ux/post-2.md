@@ -1,7 +1,7 @@
 ---
-title: "Xerox: Multi-interface UX"
+title: "Award-winning Products & Processes"
 meta_title: ""
-description: "How I introduced rapid prototyping and user-driven innovation at a legacy company, resulting in award-winning products."
+description: "Xerox: Iterative rapid prototyping and modern design ops in legacy teams; award-winning results."
 date: 2022-04-04T05:00:00Z
 image: "/images/case-studies/xerox/xrx-cover.png"
 categories: ["UX", "DesignOps"]

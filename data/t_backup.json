@@ -17,24 +17,24 @@
     "darkmode": {
       "theme_color": {
         "primary": "#fff",
-        "body": "#0E0E0E",
+        "body": "#1c1c1c",
         "border": "#3E3E3E",
-        "light": "#181818",
+        "light": "#222222",
         "dark": "#fff"
 
       },
       "text_color": {
-        "text": "#9b9b9b",
-        "text_dark": "#e1e1e1",
+        "text": "#B4AFB6",
+        "text_dark": "#fff",
         "text_light": "#B4AFB6"
       }
     }
   },
   "fonts": {
     "font_family": {
-      "primary": "Sora:wght@200;400",
+      "primary": "Heebo:wght@400;600",
       "primary_type": "sans-serif",
-      "secondary": "Montserrat:wght@100;400",
+      "secondary": "Signika:wght@500;700",
       "secondary_type": "sans-serif"
     },
     "font_size": {

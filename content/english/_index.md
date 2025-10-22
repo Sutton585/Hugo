@@ -5,16 +5,24 @@ layout: landing-page
 banner:
   enable: true
   title: "David Sutton"
+  align: "left"
   content: "I've spent over a decade improving operations so you can focus on what you do best. Tired of putting out fires? Let’s write your next chapter together."
   image: "/images/face-logo.png"
+  image2: "#"
   button:
     enable: true
     label: "Get Started"
     link: "#features"
   button2:
+    enable: true
+    label: "Contact Me"
+    link: "contact"
+  clientLogos: "/images/logo-group3.png"
+  clients:
     enable: false
-    label: "Get Started"
-    link: "#features"
+    # title: "Powering innovative product teams."
+    # content: "From startups to established enterprises."
+    gallery: "/images/client-logos"
 
 
 # Case Studies
@@ -28,8 +36,8 @@ case_studies:
 # Clients
 clients:
   enable: false
-  # title: "Powering the world’s best product teams."
-  # content: "From innovative startups to established enterprises."
+  # title: "Powering innovative product teams."
+  # content: "From startups to established enterprises."
   gallery: "/images/client-logos"
 
 # Features

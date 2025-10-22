@@ -2,7 +2,7 @@
 
 {{ with . }}
   {{ if .enable }}
-    <section class="section my-0 py-2">
+    <section class="section my-0 py-0">
       <div class="container">
         {{ if or .title .content }}
         <div class="row">
@@ -13,7 +13,7 @@
         </div>
         {{ end }}
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 py-4">
             
             {{/* --- 1. The Main Clickable Wrapper --- */}}
             {{/* We wrap everything in a link, make it a block, and add the 'group' class for hover effects */}}
@@ -31,7 +31,7 @@
                   {{ range $row1Logos }}
                     {{ $image := resources.Get (printf "%s/%s" $galleryPath .Name) }}
                     {{ if $image }}
-                      {{ $logo := $image.Resize "x40" }}
+                      {{ $logo := $image.Resize "x30" }}
                       <img src="{{ $logo.RelPermalink }}" alt="{{ .Name | replaceRE `\\..*` "" }}" class="w-auto">
                     {{ end }}
                   {{ end }}
@@ -40,7 +40,7 @@
                   {{ range $row2Logos }}
                     {{ $image := resources.Get (printf "%s/%s" $galleryPath .Name) }}
                     {{ if $image }}
-                      {{ $logo := $image.Resize "x40" }}
+                      {{ $logo := $image.Resize "x30" }}
                       <img src="{{ $logo.RelPermalink }}" alt="{{ .Name | replaceRE `\\..*` "" }}" class="w-auto">
                     {{ end }}
                   {{ end }}

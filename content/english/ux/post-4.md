@@ -1,7 +1,7 @@
 ---
-title: "Interactive Gaming Experience Design"
+title: "Multiplatform Gaming Innovation"
 meta_title: ""
-description: "Designing and leading a multimedia gaming experience that captured leads and engaged trade show attendees."
+description: "MSM: Designing and leading a unique gaming experience generating leads and engaging users."
 date: 2022-04-04T05:00:00Z
 image: "images/case-studies/msm/maximp-cover.png"
 categories: ["UX", "DesignOps"]

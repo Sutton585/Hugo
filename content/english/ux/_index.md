@@ -7,11 +7,17 @@ banner:
   enable: true
   title: "Experience. Design. Systems."
   content: "From startups to enterprise, I create intuitive UX and scalable systems to eliminate friction between product and engineering. I'll lead, fill gaps, or audit and coach you to the next level."
-  image: "#"
+  image: ""
+  image2: "#"
+  clientLogos: "/images/logo-group3.png"
   button:
     enable: true
     label: "See My Work"
     link: "ux/#work"
+  button2:
+    enable: true
+    label: "Contact Me"
+    link: "contact"
 
 # Case Studies
 case_studies:
@@ -19,7 +25,7 @@ case_studies:
   details: false
   view: "default"
   title: "Featured Work"
-  description: "Recent impact: Smooth ops, intuitive products, measurable results. "
+  description: "Intuitive products, measurable results. "
   categories: ["UX", "DesignOps"]
 
 
