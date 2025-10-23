@@ -52,7 +52,7 @@ features:
     button:
       enable: true
       label: "Take Action Now"
-      link: "ux"
+      link: "portfolio"
 
   - title: "Business slows without you?"
     image: "/images/service-2.png"
