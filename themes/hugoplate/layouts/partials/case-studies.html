@@ -1,0 +1,26 @@
+{{/* layouts/partials/case-studies.html */}}
+{{ $data := . }}
+{{ $details:= .Params.details }}
+
+<section id="case-studies" class="section py-10 scroll-mt-12">
+  <div class="container">
+    {{ if $data.details }}
+      <div class="row">
+        <div class="mx-auto mb-12 text-center md:col-10 lg:col-8">
+          <h2 class="mb-4">{{ $data.title | markdownify }}</h2>
+          <p>{{ $data.description | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+
+    {{ $filteredPages := where site.RegularPages "Params.categories" "intersect" $data.categories }}
+
+    <div class="row">
+      {{ range $filteredPages }}
+        <div class="relative group mb-8 md:col-6">
+          {{ partial "components/case-study-card" (dict "Page" . "show_details" $data.details "view" $data.view) }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

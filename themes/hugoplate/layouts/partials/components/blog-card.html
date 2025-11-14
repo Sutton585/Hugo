@@ -1,0 +1,39 @@
+<div class="rounded-lg shadow-md transition duration-300 hover:shadow-lg hover:scale-[1.02] hover:bg-light hover:dark:bg-darkmode-light">
+  {{ $image:= .Page.Params.image }}
+    {{ if $image }}
+      {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Page.Title "Class" "w-full rounded-t-lg") }}
+    {{ end }}
+  <div class = "p-4 bg-light dark:bg-darkmode-light rounded-b-lg">
+    <h4 class="">
+      <a href="{{ .Page.RelPermalink }}" class="after:absolute after:inset-0">
+        {{ .Page.Title }}
+      </a>
+    </h4>
+  <!-- {{ $categories:= .Params.categories }} -->
+  <!-- {{ if $categories }}
+    <ul class="mb-4">
+        <li class="mr-4 inline-block">
+          <a href="{{ `authors/` | relLangURL }}{{ .Page.Params.Author | urlize }}/">
+            <i class="fa-regular fa-circle-user mr-2"></i>{{ .Page.Params.author }}
+          </a>
+        </li>
+        <li class="mr-4 inline-block">
+          <i class="fa-regular fa-folder mr-1"></i>
+          {{ range $i,$p:= $categories }}
+            <a
+              href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+              class="ms-1"
+              >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                {{ "," }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </li>
+      </ul>
+  {{ end }} -->
+  <p class="">{{ .Description | plainify }}</p>
+  <!-- <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+    {{ T "read_more" }}
+  </a> -->
+</div>
+</div>

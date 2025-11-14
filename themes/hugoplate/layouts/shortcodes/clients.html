@@ -1,0 +1,9 @@
+{{/* layouts/shortcodes/clients.html */}}
+
+{{ partial "clients.html" (dict 
+    "enable" true
+    "title" (.Get "title") 
+    "content" (.Inner | markdownify)
+    "gallery" (.Get "gallery")
+  )
+}}

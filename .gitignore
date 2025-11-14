@@ -1,0 +1,11 @@
+# .gitignore
+
+# Hugo build output
+/public/
+
+# Other generated files
+/resources/
+hugo_stats.json
+
+/content/english/authors
+/content/pages/elements.md

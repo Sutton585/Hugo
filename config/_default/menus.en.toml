@@ -1,0 +1,63 @@
+	############# English navigation ##############
+
+# main menu
+# [[main]]
+# name = "Technical Ops"
+# url = "/techops"
+# weight = 3
+
+# [[main]]
+# name = "User Experience"
+# url = "/ux"
+# weight = 1
+
+# [[main]]
+# name = "Business Ops"
+# url = "/bizsystems"
+# weight = 2
+
+# [[main]]
+# weight = 4
+# name = "Services"
+
+# [[main]]
+# parent = "Services"
+# name = "UX/Product Teams"
+# url = "/UX"
+
+# [[main]]
+# parent = "Services"
+# name = "Business Systems"
+# url = "/bizSystems"
+
+# [[main]]
+# parent = "Services"
+# name = "Tech Operatiosn"
+# url = "/techOps"
+
+# [[main]]
+# parent = "Pages"
+# name = "Categories"
+# url = "/categories"
+
+# [[main]]
+# parent = "Pages"
+# name = "About"
+# url = "/about"
+
+
+# footer menu
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 1
+
+# [[footer]]
+# name = "Elements"
+# url = "/elements"
+# weight = 2
+
+# [[footer]]
+# name = "Privacy Policy"
+# url = "/privacy-policy"
+# weight = 3

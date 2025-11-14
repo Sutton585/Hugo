@@ -1,0 +1,56 @@
+
+{{ $view := .view | default "default" }}
+
+{{ if eq $view "default" }}
+  {{/* --- DEFAULT LAYOUT --- */}}
+  <div id="case-study-card" class="rounded-sm transition duration-200 hover:shadow-md hover:-translate-y-2 hover:bg-light hover:dark:bg-darkmode-light">
+    {{ $image:= .Page.Params.image }}
+    {{ if $image }}
+      {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Page.Title "Class" "w-full rounded-t-lg") }}
+    {{ end }}
+    <div class = "p-4 bg-light dark:bg-darkmode-light rounded-b-lg">
+    <h4 class="">
+      <a href="{{ .Page.RelPermalink }}" class="after:absolute after:inset-0">
+        {{ .Page.Title }}
+      </a>
+    </h4>
+
+    {{ if .show_details }}
+    {{ $categories:= .Page.Params.categories }}
+    {{ if $categories }}
+      <ul class="mb-4">
+        <li class="mr-4 inline-block">
+          <a href="{{ `authors/` | relLangURL }}{{ .Page.Params.Author | urlize }}/">
+            <i class="fa-regular fa-circle-user mr-2"></i>{{ .Page.Params.author }}
+          </a>
+        </li>
+        <li class="mr-4 inline-block">
+          <i class="fa-regular fa-folder mr-1"></i>
+          {{ range $i,$p:= $categories }}
+            <a
+              href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+              class="ms-1"
+              >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                {{ "," }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </li>
+      </ul>
+    {{ end }}
+    {{ end }}
+
+    <p class="">{{ .Page.Description | plainify }}</p>
+    <!-- <a class="btn btn-outline-primary btn-sm" href="{{ .Page.RelPermalink }}">
+      {{ T "read_more" }}
+    </a> -->
+  </div>
+  </div>
+
+{{ else if eq $view "condensed" }}
+  {{/* --- CONDENSED LAYOUT --- */}}
+  <div class="border p-4 text-center">
+    <p>This is the condensed view for: <strong>{{ .Page.Title }}</strong></p>
+  </div>
+
+{{ end }}

@@ -1,0 +1,149 @@
+{{/* layouts/partials/banner.html */}}
+
+{{ with . }}
+
+
+    
+    <section id="banner" class="section pb-2 pt-14">
+    <!-- <section id="banner" class="section pb-2 pt-14 {{ if .sticky }}sticky top-0 z-10 fixed{{ end }}"> -->
+    <!-- <section id="banner" class="section pb-2 pt-14 {{ if .sticky }}sticky top-0 z-10{{ end }}"> -->
+
+      <div class="container">
+        <div class="row justify-center">
+
+
+          <!-- top-image -->
+          {{ if .image }} 
+            <div class="col-12">
+              {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto mb-6" "Size" "150x150" ) }}
+              </div>
+            {{ end }}
+          {{ end }}
+          
+          <!-- text content -->
+          <div class="lg:col-8 md:col-9 text-center">
+              <h1 class="mb-4 text-h2 lg:text-h1">
+                {{ .title | markdownify }}
+              </h1> 
+              <p class="mb-8">
+                {{ .content | markdownify }}
+              </p>
+              
+              <!-- buttons -->
+              <div class="flex justify-center gap-4">
+                {{ with .button }}
+                  {{ if .enable }}
+                    <a class="btn btn-primary" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
+                      {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
+                    </a>
+                  {{ end }} 
+                {{ end }}
+                {{ with .button2 }}
+                  {{ if .enable }}
+                    <a class="btn btn-outline-primary" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
+                      {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
+                    </a>
+                  {{ end }} 
+                {{ end }}
+              </div>
+          </div>
+
+          <!-- bottom-image -->
+          {{ if .image2 }}
+            <div class="col-12 mt-8">
+
+                {{ partial "image" (dict "Src" .image2 "Alt" "Banner image (bottom)" "Loading" "lazy" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+            </div>
+          {{ end }}
+
+          <!-- client logos -->
+          <!-- {{ if .clientLogos }}
+            
+              {{ partial "image" (dict 
+                  "Src" .clientLogos 
+                  "Alt" "Client Logos" 
+                  "Loading" "eager" 
+                  "Size" "900x" 
+                  "Class" "opacity-50 w-[1200px]")}}
+            
+          {{ end }} -->
+          
+          {{ with .clients}}
+            {{ if .enable }}
+              <div class="container pt-4">
+                {{ if or .title .content }}
+                <div class="row">
+                  <div class="mx-auto mb-12 text-center lg:col-8">
+                    <h5>{{ .title | markdownify }}</h5>
+                    <h5 class="text-text-light">{{ .content | markdownify }}</h5>
+                  </div>
+                </div>
+                {{ end }}
+                <div class="row">
+                  <div class="col-12 py-4">
+                    
+                    <!-----------------------------------------
+                    1. The Main Clickable Wrapper
+                      We wrap everything in a link, make it a block, and add the 'group' class for hover effects
+                    ------------------------------------------->
+                    <a href="{{ .link }}" class="group relative block overflow-hidden opacity-50">
+                      
+
+                    <!-----------------------------------------
+                    2. The Logo Section (Responsive Grid Layout
+                    ------------------------------------------->
+                    {{ $galleryPath := .gallery }}
+                    {{ $allLogos := readDir (printf "assets/%s" $galleryPath) }}
+
+                    <!-- 
+                    Define the grid layout here using Tailwind classes:
+                        - grid:          Turns this div into a grid container.
+                        - grid-cols-4:   Default: 4 logos per row on small screens.
+                        - md:grid-cols-8: Medium screens & up: 8 logos per row (effectively 1 row if <= 8 logos).
+                        - lg:grid-cols-10: Large screens & up: 10 logos per row. 
+                        - gap-8:         Spacing between logos.
+                        - max-w-6xl:     Limits the overall width of the grid container.
+                        - mx-auto:       Centers the grid container.
+                        You can adjust the grid-cols-* numbers and max-w-* value. 
+                    -->
+                   
+                    <div class="grid gap-4 grid-cols-6 mx-auto">
+
+                      <!-- 
+                      Loop through ALL logos -->
+                      {{ range $allLogos }}
+                        {{ $image := resources.Get (printf "%s/%s" $galleryPath .Name) }} 
+                        {{ if and $image (eq $image.ResourceType "image") }}
+
+                          <!-- 
+                          Each logo is centered within its grid cell -->
+                          <div class="flex items-center justify-center"> 
+                            {{ $logo := $image.Resize "x40" }} <!-- Keep resizing for consistency -->
+                            <img src="{{ $logo.RelPermalink }}" alt="{{ .Name | replaceRE `\\..*` "" }}" class="w-auto h-10 md:h-8 opacity-70">
+                          </div>
+                        {{ end }}
+                      {{ end }}
+
+                    </div> <!-- End of the grid container */}} -->
+
+
+                      <!-----------------------------------------
+                        3. The Hover Overlay with Blur and Button
+                      ------------------------------------------->
+                      <div class="absolute inset-0 flex items-center justify-center bg-body/80 dark:bg-darkmode-body/80 opacity-0 backdrop-blur-sm transition-opacity duration-200   group-hover:opacity-100 mx-auto">
+                        <span class="btn btn-outline-sm rounded-full">
+                          See my work
+                          <i class="fa fa-arrow-right pl-2"></i>
+                        </span>
+                      </div>
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+
+        </div>
+      </div>
+    </section>

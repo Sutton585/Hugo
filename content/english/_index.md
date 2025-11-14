@@ -1,0 +1,88 @@
+---
+layout: landing-page
+sticky: false
+
+banner:
+  enable: true
+  title: "David Sutton"
+  content: "I've spent over a decade improving operations from startups to enterprise orgs. If you're tired of putting out fires, let’s write your next chapter together."
+  image: "/images/face-logo.png"
+  image2: ""
+  button:
+    enable: true
+    label: "Get Started"
+    link: "#features"
+  button2:
+    enable: true
+    label: "Contact Me"
+    link: "contact"
+  clients:
+    enable: true
+    # title: "Powering innovative product teams."
+    # content: "From startups to established enterprises."
+    gallery: "/images/client-logos"
+    link: "/portfolio"
+
+
+# Features
+features:
+  - title: "UX & Product Leadership"
+    image: "/images/service-1.png"
+    content: "De-risk your design staffing, systems and ops; I can lead, fill gaps, or coach you to the next level."
+    bulletpoints:
+      - "Support and resources to staff and scale user-centered teams with intention."
+      - "Embedded coaching and workshops for Rapid MVP development and UX leverage."
+      - "Product and process audits for improved delivery workflows, governance, AI-enhanced tooling and automation."
+    button:
+      enable: true
+      label: "Take Action Now"
+      link: "portfolio"
+
+  - title: "Business slows without you?"
+    image: "/images/service-2.png"
+    content: "If it all goes through you, it creates a bottleneck that you can't fix on your own. I create background improvements so you can stop playing babysitter."
+    bulletpoints:
+      - "You built something that works *well* because you work *hard*."
+      - "You lead from the front, so everything slows when you aren’t hands-on."
+      - "If someone just suggests fancy tech overhauls and buzzwords, you're already tuning them out."
+    button:
+      enable: true
+      label: "Take Action Now"
+      link: "bizsystems"
+
+#   - title: "Scaling up in controlled chaos?"
+#     image: "/images/service-3.png"
+#     content: "Duct-tape scaling isn’t a phase, it’s a red flag. I help get you out of the weeds fast. Want to see life after survival-mode?"
+#     bulletpoints:
+#       - "The more growth you see, the more plates you have to spin."
+#       - "Priorities start to shift, timelines drift, and every week feels more reactive than the last."
+#       - "Teams are spinning their wheels, onboarding takes forever, and the tooling is all over the place."
+#     button:
+#       enable: true
+#       label: "Take Action Now"
+#       link: "techops"
+
+# Testimonials
+testimonials:
+  enable: true
+  title: "What Others Are Saying"
+  description: "From startups to enterprise, here's what some collaborators have to say:"
+
+  # Testimonials
+  testimonials:
+    - name: "Jennifer Kotler"
+      designation: "UX Designer @ Space Telescope Institute"
+      avatar: "/images/avatar-sm.png"
+      content: "David has a special ability to build communities of designers and help others create cool things. I have benefited a ton from his User Experience group Upstate UX. I feel lucky to know someone who creates such amazing resources for the community."
+    
+    - name: "Sean Boyle"
+      designation: "Senior Lecturer @ RIT"
+      avatar: "/images/avatar-sm.png"
+      content: "David has proven to be a great team player, coordinator, and facilitator in organizing Upstate UX. He also formed and successfully ran the Crashtest group, and was absolutely instrumental in helping it achieve the success and praise it now sees."
+
+    - name: "Trish Terrance"
+      designation: "UX Research, Xerox"
+      avatar: "/images/avatar-sm.png"
+      content: "David could always be counted on to deliver unique solutions. He is an outstanding problem solver."
+
+---

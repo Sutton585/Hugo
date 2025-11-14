@@ -1,0 +1,45 @@
+{{ define "hero" }}
+  
+  <!-- Banner -->
+  {{ with .Params.banner }}
+    {{ if .enable }}
+        {{ partial "banner.html" . }}  
+    {{ end }}
+  {{ end }}
+  <!-- Banner --> 
+  
+  <!-- Clients --> 
+  {{ partial "clients.html" .Params.clients }}
+  <!-- /Clients -->
+  
+{{ end }}
+
+{{ define "main" }}
+
+  
+    <!-- Case Studies -->
+
+    {{ with .Params.case_studies }}
+    {{ if .enable }}
+      {{ partial "case-studies.html" . }}
+    {{ end }}
+    {{ end }}
+
+    <!-- /Case Studies -->
+
+    <!-- Features -->
+
+    {{ with .Params.features }}
+      {{ partial "features.html" . }}
+    {{ end }}
+
+    <!-- Features -->
+
+    <!-- Testimonials -->
+
+    {{ with .Params.testimonials }}
+      {{ partial "testimonials.html" . }}
+    {{ end }}
+  </div>
+
+{{ end }}

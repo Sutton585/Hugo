@@ -1,0 +1,28 @@
+/* Add your own custom styles here */
+html {
+  scroll-behavior: smooth;
+}
+
+.gallery-compact .gallery-item {
+  /* This overrides the theme's hardcoded height */
+  height: auto !important;
+}
+
+.gallery-compact .gallery-item img {
+  /* This forces the images to be small */
+  max-height: 120px;
+  width: auto;
+  margin: auto;
+}
+
+
+.safari-fix {
+  transform: translate3d(0, 0, 0);
+}
+
+
+.modal-content{
+  z-index: 1000 !important;
+  display: relative;
+}
+
