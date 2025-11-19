@@ -22,6 +22,8 @@
 {{ $scripts = $scripts | append (resources.Get "js/custom.js") }}
 {{ $scripts = $scripts | resources.Concat "js/script.js" }}
 
+{{ $scriptsLazy = $scriptsLazy | append (resources.Get "js/gradient-box.js") }}
+
 {{ $scriptsLazy = $scriptsLazy | resources.Concat "js/script-lazy.js" }}
 
 {{ if hugo.IsProduction }}

@@ -13,7 +13,7 @@ banner:
     label: "Let's Get Started"
     link: "#features"
   button2:
-    enable: false
+    enable: true
     label: "Contact Me"
     link: "contact"
   clients:
