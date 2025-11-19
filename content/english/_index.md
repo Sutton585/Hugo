@@ -10,10 +10,10 @@ banner:
   image2: ""
   button:
     enable: true
-    label: "Get Started"
+    label: "Let's Get Started"
     link: "#features"
   button2:
-    enable: true
+    enable: false
     label: "Contact Me"
     link: "contact"
   clients:
@@ -26,29 +26,31 @@ banner:
 
 # Features
 features:
-  - title: "UX & Product Leadership"
+  - title: "Intuitive Experience Design"
     image: "/images/service-1.png"
-    content: "De-risk your design staffing, systems and ops; I can lead, fill gaps, or coach you to the next level."
+    content: "Supercharge you user-centered process via design systems, operations, staffing, and workflow automation. I'll lead, fill gaps, or coach your team to the next level."
     bulletpoints:
-      - "Support and resources to staff and scale user-centered teams with intention."
+      - "Support and resources to staff and scale user-centered product teams with intention."
       - "Embedded coaching and workshops for Rapid MVP development and UX leverage."
       - "Product and process audits for improved delivery workflows, governance, AI-enhanced tooling and automation."
     button:
       enable: true
-      label: "Take Action Now"
+      label: "See For Yourself"
       link: "portfolio"
 
   - title: "Business slows without you?"
     image: "/images/service-2.png"
-    content: "If it all goes through you, it creates a bottleneck that you can't fix on your own. I create background improvements so you can stop playing babysitter."
+    content: "You built something that that works *well* because you work *hard*. I streamline your systems so you can start marching forward, and stop playing babysitter."
     bulletpoints:
-      - "You built something that works *well* because you work *hard*."
-      - "You lead from the front, so everything slows when you aren’t hands-on."
-      - "If someone just suggests fancy tech overhauls and buzzwords, you're already tuning them out."
+      - "When every process and approval goes through you, everything grinds to a halt and demands your time and energy."
+      - "The solution isn't fancy tech overhauls and buzzwords, it's a strong foundation for your critical processes and systems."
+      - "I clean up whats slowing you down, bleeding your budget, and filling your calendar."
     button:
       enable: true
       label: "Take Action Now"
       link: "bizsystems"
+
+
 
 #   - title: "Scaling up in controlled chaos?"
 #     image: "/images/service-3.png"

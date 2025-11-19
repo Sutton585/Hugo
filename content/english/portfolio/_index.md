@@ -7,7 +7,7 @@ title: "UX Services"
 banner:
   enable: true
   title: "Experience. Design. Systems."
-  content: "From startups to enterprise, I create intuitive UX and scalable systems that eliminate friction between product and engineering. Whether it's refining Figma design systems governance or the role of AI in your org, I can lead, fill gaps, or coach you to the next level."
+  content: "From startups to enterprise, I create intuitive experience design and scaling design systems to eliminate friction in innovative teams. I can lead, fill gaps, or coach you and your team to the next level."
   image: ""
   image2: ""
   clients:
@@ -23,7 +23,7 @@ banner:
   button2:
     enable: true
     label: "Contact Me"
-    link: "contact"
+    link: "/contact"
 
 # Case Studies
 case_studies:

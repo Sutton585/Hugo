@@ -1,31 +1,40 @@
-// assets/js/iframe-scaler.js
-
-function autoScaleIframes() {
-  const containers = document.querySelectorAll('.zoom-iframe-auto');
-  if (!containers.length) return;
-
-  containers.forEach(container => {
-    const nativeWidth = parseFloat(container.dataset.nativeWidth);
-    const nativeHeight = parseFloat(container.dataset.nativeHeight);
-    const availableWidth = container.clientWidth;
-    const iframe = container.querySelector('iframe');
-    
-    // The p-2 class adds 0.5rem (8px) of padding on each side
-    const padding = 0;
-
-    if (availableWidth < nativeWidth) {
-      const scale = availableWidth / nativeWidth;
-      iframe.style.transform = `scale(${scale})`;
-      const scaledHeight = nativeHeight * scale;
-      container.style.height = `${scaledHeight + padding}px`;
-    } else {
-      // If there's enough space, use the native size
-      iframe.style.transform = 'scale(1)';
-      container.style.height = `${nativeHeight + padding}px`;
-    }
-  });
-}
 
 // Run when the page loads and whenever the window is resized
-window.addEventListener('load', autoScaleIframes);
+// window.addEventListener('load', autoScaleIframes);
+
+// Run all scripts when the page is fully loaded
+window.addEventListener('load', function() {
+  autoScaleIframes();
+  initGradientBoxes();
+});
 window.addEventListener('resize', autoScaleIframes);
+
+
+
+// Gradient Box
+// --- Gradient Box Effect ---
+
+function initGradientBoxes() {
+  // Debug: Check if this function is running
+  // console.log("initGradientBoxes: Searching for boxes...");
+
+  const gradientBoxes = document.querySelectorAll(".gradient-box");
+  // const gradientBoxes = document.querySelectorAll(".btn-outline-hero");
+
+  // Debug: Check if we found any boxes
+  // console.log("initGradientBoxes: Found " + gradientBoxes.length + " boxes.");
+
+  gradientBoxes.forEach(box => {
+    box.addEventListener("mousemove", function(e) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      // Debug: Check if the mouse event is firing and coordinates are calculated
+      // console.log("Mousemove -- X: " + x + "px, Y: " + y + "px");  
+
+      e.currentTarget.style.setProperty("--mouse-x", `${x}px`);
+      e.currentTarget.style.setProperty("--mouse-y", `${y}px`);
+    });
+  });
+}

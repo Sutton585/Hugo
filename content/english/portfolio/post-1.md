@@ -1,6 +1,6 @@
 ---
 title: "Scaling Product/Design Ops"
-meta_title: "test"
+meta_title: "Scaling Product/Design Ops"
 description: "WAE: Designing and launching a new startup while delivering user satisfaction improvements."
 date: 2022-04-04T05:00:00Z
 image: "/images/case-studies/wae/image 260.png"

@@ -33,14 +33,14 @@
               <div class="flex justify-center gap-4">
                 {{ with .button }}
                   {{ if .enable }}
-                    <a class="btn btn-primary" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
+                    <a class="btn btn-outline-primary gradient-box" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
                       {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
                     </a>
                   {{ end }} 
                 {{ end }}
                 {{ with .button2 }}
                   {{ if .enable }}
-                    <a class="btn btn-outline-primary" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
+                    <a class="btn btn-outline-primary gradient-box" href="{{ .link }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener" {{ end }}>
                       {{ .label }} <i class="fa fa-arrow-right pl-2"></i>
                     </a>
                   {{ end }} 
@@ -130,8 +130,8 @@
                       <!-----------------------------------------
                         3. The Hover Overlay with Blur and Button
                       ------------------------------------------->
-                      <div class="absolute inset-0 flex items-center justify-center bg-body/80 dark:bg-darkmode-body/80 opacity-0 backdrop-blur-sm transition-opacity duration-200   group-hover:opacity-100 mx-auto">
-                        <span class="btn btn-outline-sm rounded-full">
+                      <div class="absolute inset-0 flex items-center justify-center bg-body/80 dark:bg-darkmode-body/80 opacity-0 backdrop-blur-sm transition-opacity duration-200   group-hover:opacity-100 mx-auto ">
+                        <span class="btn btn-outline-sm">
                           See my work
                           <i class="fa fa-arrow-right pl-2"></i>
                         </span>

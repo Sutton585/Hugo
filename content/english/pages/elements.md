@@ -10,6 +10,10 @@ draft: false
 
 {{< toc >}}
 
+<div class="gradient-box">
+  <p>This is the content inside the box.</p>
+</div>
+
 Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
 # Heading 1
@@ -44,7 +48,12 @@ Strike through uses two tildes. ~~Scratch this.~~
 
 {{< button label="Button" link="/" style="solid" >}}
 
-<hr>
+{{< button label="Button" link="/" style="outline" >}}
+
+<a href="#" class="btn btn-outline-primary gradient-box">
+  Button with Gradient Effect
+</a>
+
 
 ### Link
 

@@ -5,13 +5,13 @@ title: "Business Systems"
 # Banner
 banner:
   enable: true
-  title: "Your business runs on your grit. What happens when you step away?"
-  content: "When everything goes through you, your availability is the bottleneck for growth and time off becomes impossible. I create quiet, low-maintenance systems that free you up _and_ grow your business."
+  title: "Your business should work as hard as you do."
+  content: "If every process goes through you, the business can only survive by demanding every bit of time and energy you have. I create quiet, low-maintenance systems that free you up _and_ grow your business."
   image: "#"
   button:
     enable: true
     label: "Start Your Free Audit"
-    link: "contact"
+    link: "/contact"
 
 # Features
 features:

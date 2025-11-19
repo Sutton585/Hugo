@@ -1,0 +1,64 @@
+{{/* layouts/partials/clients.html */}}
+
+{{ with . }}
+  {{ if .enable }}
+    <section class="section my-0 py-0" id="clients">
+      <div class="container">
+        {{ if or .title .content }}
+        <div class="row">
+          <div class="mx-auto mb-12 text-center lg:col-8">
+            <h5>{{ .title | markdownify }}</h5>
+            <h5 class="text-text-light">{{ .content | markdownify }}</h5>
+          </div>
+        </div>
+        {{ end }}
+        <div class="row">
+          <div class="col-12 py-4">
+            
+            {{/* --- 1. The Main Clickable Wrapper --- */}}
+            {{/* We wrap everything in a link, make it a block, and add the 'group' class for hover effects */}}
+            <a href="/portfolio/" class="group relative block overflow-hidden opacity-50">
+              
+              {{/* --- 2. The Logo Section (The background content) --- */}}
+              {{ $galleryPath := .gallery }}
+              {{ $allLogos := readDir (printf "assets/%s" $galleryPath) }}
+              {{ $midpoint := div (len $allLogos) 2 }}
+              {{ $row1Logos := first $midpoint $allLogos }}
+              {{ $row2Logos := after $midpoint $allLogos }}
+
+              <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+                <div class="flex w-full items-center justify-evenly">
+                  {{ range $row1Logos }}
+                    {{ $image := resources.Get (printf "%s/%s" $galleryPath .Name) }}
+                    {{ if $image }}
+                      {{ $logo := $image.Resize "x30" }}
+                      <img src="{{ $logo.RelPermalink }}" alt="{{ .Name | replaceRE `\\..*` "" }}" class="w-auto">
+                    {{ end }}
+                  {{ end }}
+                </div>
+                <div class="flex w-full items-center justify-evenly">
+                  {{ range $row2Logos }}
+                    {{ $image := resources.Get (printf "%s/%s" $galleryPath .Name) }}
+                    {{ if $image }}
+                      {{ $logo := $image.Resize "x30" }}
+                      <img src="{{ $logo.RelPermalink }}" alt="{{ .Name | replaceRE `\\..*` "" }}" class="w-auto">
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+
+              {{/* --- 3. The Hover Overlay with Blur and Button --- */}}
+              <div class="absolute inset-0 flex items-center justify-center bg-body/80 dark:bg-darkmode-body/80 opacity-0 backdrop-blur-sm transition-opacity duration-200 group-hover:opacity-100 max-w-4xl mx-auto">
+                <span class="btn btn-outline-sm rounded-full">
+                  See my work
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </span>
+              </div>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

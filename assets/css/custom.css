@@ -26,3 +26,86 @@ html {
   display: relative;
 }
 
+
+
+
+
+/* -------------------------------------- */
+/* 1. REUSABLE STRUCTURAL COMPONENT LAYER */
+/* -------------------------------------- */
+/* This layer defines the required containment and layout behavior 
+for any element with the .gradient-box class. 
+*/
+@layer components {
+  .gradient-box {
+    /* These utilities fix the original alignment issue:
+    - relative: Anchors the absolute gradient blob (::before).
+    - overflow-hidden: Clips the 800px gradient to the element boundaries.
+    - inline-flex: Fixes vertical alignment issues inherent to using `position: relative` 
+      on an inline-block element by forcing a clean, predictable display model.
+    */
+    @apply relative overflow-hidden; 
+    
+    /* Custom properties that override core utilities:
+    - background-color: transparent is needed to see the gradient under the text layer.
+    - transition: initial prevents the button's background transition from interfering 
+      with the fast-moving gradient opacity transition.
+    */
+    background-color: transparent !important;
+    transition: initial !important;
+
+    /* Ensures the text content (which is z-indexed naturally higher) is visually 
+    layered above the z-index: -1 pseudo-element.
+    */
+    z-index: 1;
+  }
+}
+
+/* ---------------------------------------- */
+/* 2. REUSABLE EFFECT STYLING (The Blob)    */
+/* ---------------------------------------- */
+/* This is the actual visual effect styling, applied only to elements 
+that have the .gradient-box class.
+*/
+
+.gradient-box::before {
+  /* This is the gradient "blob" that chases the cursor */
+  content: "";
+  z-index: -1;
+  position: absolute;
+
+  /* Set the size of the blob */
+  width: 600px; 
+  height: 600px;
+
+  /* Define the default (Light Mode) blob color: Faint Black */
+  --gradient-blob-color: color-mix(in srgb, var(--color-dark) 100%, transparent);
+  --gradient-blob-end: color-mix(in srgb, var(--color-dark) 0%, transparent);
+  background: radial-gradient(circle, var(--gradient-blob-color) 0%, var(--gradient-blob-end) 70%);
+
+  /* Uses the CSS variables updated by JavaScript's mousemove listener */
+  top: var(--mouse-y, 50%);
+  left: var(--mouse-x, 50%);
+  
+  /* This centers the pseudo-element's (blob's) center point on the cursor coordinates */
+  transform: translate(-50%, -50%); 
+  
+  /* Hide it by default and give it a smooth fade-in/out */
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+
+  /* Ensures the pseudo-element does not capture mouse events */
+  pointer-events: none;
+}
+
+html.dark .gradient-box::before {
+  /* Dark mode color variables */
+  --gradient-blob-color: color-mix(in srgb, var(--color-darkmode-dark) 100%, transparent);
+  --gradient-blob-end: color-mix(in srgb, var(--color-darkmode-dark) 0%, transparent);
+}
+
+.gradient-box:hover::before {
+  /* Show the blob on hover */
+  opacity: 1;
+}
+
