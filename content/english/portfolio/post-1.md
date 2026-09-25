@@ -52,7 +52,7 @@ This integrated system became the team's secret weapon for creating alignment an
 
 <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-2">
-    
+
     {{< image src="images/case-studies/wae/mvp.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
     
 _Example from the initial MVP that needed to be redesigned and completely rebuilt._
@@ -95,7 +95,7 @@ I reached out to sales department leaders to help select key potential clients f
 ### Impact
 This strategy transformed our research process into a powerful sales and marketing engine. The internal loop ensured we built the *right product* to solve high-value problems. The external loop turned passive prospects into invested partners. By the time we launched, we didn't just have a validated product; we had a cohort of advocates who felt a sense of ownership and were already sold on its success.
 
-{{< image src="images/case-studies/wae/wae-hero.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+{{< image src="images/case-studies/wae/WAE-hero.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
 
 ## Core Innovation To Spark Adoption
