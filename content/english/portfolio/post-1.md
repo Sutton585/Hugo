@@ -52,7 +52,8 @@ This integrated system became the team's secret weapon for creating alignment an
 
 <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-2">
-    {{< image src="images/case-studies/wae/MVP.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+    
+    {{< image src="images/case-studies/wae/mvp.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
     
 _Example from the initial MVP that needed to be redesigned and completely rebuilt._
   </div>
