@@ -50,7 +50,7 @@ This engine culminated in a frictionless handoff process where any approved chan
 This integrated system became the team's secret weapon for creating alignment and buy-in. A senior developer called it "the best design documentation he'd ever seen." The system eliminated ambiguity, accelerated onboarding from weeks to days, and created a predictable, scalable machine for turning user needs into revenue-generating features.
 
 
-<div class="flex flex-col md:flex-row gap-6 items-center my-8">
+<!-- <div class="flex flex-col md:flex-row gap-6 items-center my-8">
   <div class="w-full md:w-1/2 md:order-2">
 
     {{< image src="images/case-studies/wae/mvp.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
@@ -58,12 +58,12 @@ This integrated system became the team's secret weapon for creating alignment an
 _Example from the initial MVP that needed to be redesigned and completely rebuilt._
   </div>
   <div class="w-full md:w-1/2 md:order-1">
-
+ -->
 ## Rebuilding Stakeholder Confidence
 Since I was brought on in response to the company's initial failed MVP, I knew a product designed in that same vacuum couldn't succeed. My mission was to establish a product design strategy using real user data, rebuild stakeholder confidence, and ensure that when we launched, we had customers ready to adopt and pay.
-  </div>
+<!--   </div>
 </div>
-
+ -->
 ### Solution
 Before we could validate any features, we first had to establish a clear product vision to rally stakeholders. I led a competitive analysis that revealed our two distinct user segments (healthcare professionals and general laborers) had very different needs but a shared desire for a platform they could trust.
  
