@@ -133,5 +133,5 @@ Ultimately, the most significant deliverable wasn't just the WAE platform. It wa
 <!-- {{< gallery dir="images/case-studies/wae-gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="false" >}} -->
 
 
-{{< image src="images/case-studies/wae/WAE-cover1.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
+{{< image src="images/case-studies/wae/wae-cover1.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
 
